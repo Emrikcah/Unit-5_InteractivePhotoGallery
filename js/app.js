@@ -3,10 +3,10 @@ let dataTitle = document.querySelectorAll('a');
 let arrayList = captureText();
 
 function searchTerm(term) {
-    // console.log(term);
+   
 
     //if true display images otherwise hide them
-    if (arrayList.splice(' ').indexOf(term) !== -1) {
+    if (arrayList.indexOf(term) !== -1) {
         console.log('hello');
     } else {
         console.log('no way');
