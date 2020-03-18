@@ -6,8 +6,6 @@ function searchTerm(userInput) {
     //loop through the object and push onto an array
     dataTitle.forEach(i => {
         const x = i.getAttribute('data-title').toLowerCase();
-        console.log(i);
-        
 
         //if true display images otherwise hide them
         if (x.indexOf(userInput) > -1) {
