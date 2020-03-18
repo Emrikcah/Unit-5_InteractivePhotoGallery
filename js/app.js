@@ -1,6 +1,6 @@
 let searchBox = document.querySelector('.searchBox');
 let dataTitle = document.querySelectorAll('a');
-// let arrayList = captureText();
+
 
 function searchTerm(userInput) {
     //loop through the object and push onto an array
