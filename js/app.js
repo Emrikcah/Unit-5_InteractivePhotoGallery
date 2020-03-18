@@ -1,28 +1,21 @@
 let searchBox = document.querySelector('.searchBox');
 let dataTitle = document.querySelectorAll('a');
-let arrayList = captureText();
+// let arrayList = captureText();
 
-function searchTerm(term) {
-   
-
-    //if true display images otherwise hide them
-    if (arrayList.indexOf(term) !== -1) {
-        console.log('hello');
-    } else {
-        console.log('no way');
-    }
-}
-
-//get text from the 'a' tag data-title attribute and return a value
-function captureText() {
-    let arrList = [];
-
+function searchTerm(userInput) {
     //loop through the object and push onto an array
     dataTitle.forEach(i => {
         const x = i.getAttribute('data-title').toLowerCase();
-        arrList.push(x);
-    })
-    return arrList;
+        console.log(i);
+        
+
+        //if true display images otherwise hide them
+        if (x.indexOf(userInput) > -1) {
+            i.style.display = '';
+        } else {
+            i.style.display = 'none';
+        }
+    });
 }
 
 //get userInput and pass it to searchTerm()
